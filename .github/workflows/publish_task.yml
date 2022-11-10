@@ -34,8 +34,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     name: "./gradlew ${{ inputs.gradle-task}} @ ${{ inputs.runs-on }}"
     timeout-minutes: 60
-    env:
-      LOCAL_PROJECT_PUBLISH_DIR: "${{ runner.temp }}/m2"
 
     steps:
       - name: checkout repo
@@ -63,6 +61,8 @@ jobs:
       - name: Run publish task
         run: >-
           ./gradlew publishAllPublicationsToMavenProjectRepo -Pnative.deploy=true --init-script .github/init.gradle.kts
+        env:
+          LOCAL_PROJECT_PUBLISH_DIR: "${{ runner.temp }}/m2"
 
       - name: upload build reports
         if: failure()
@@ -77,6 +77,8 @@ jobs:
         with:
           name: local-project-publish-${{ inputs.runs-on }}
           path: ${{ env.MAVEN_PROJECT_REPO_DIR }}
+        env:
+          LOCAL_PROJECT_PUBLISH_DIR: "${{ runner.temp }}/m2"
 
 
   publish-artifacts:
