@@ -27,8 +27,22 @@ concurrency:
 
 jobs:
 
+  prep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: wget init.gradle.kts
+        run: >-
+          wget https://raw.githubusercontent.com/aSemy/kotlinx.serialization/master/.github/init.gradle.kts
+
+      - name: upload init.gradle.kts
+        uses: actions/upload-artifact@v3
+        with:
+          name: init.gradle.kts
+          path: init.gradle.kts
+
   publish-to-maven-local:
     runs-on: ${{ inputs.runs-on }}
+    needs: prep
     environment:
       name: artifacts
       url: ${{ steps.deployment.outputs.page_url }}
@@ -58,9 +72,14 @@ jobs:
           path: ~/.konan
           key: ${{ runner.os }}-kotlin-konan
 
+      - name: download init.gradle.kts
+        uses: actions/download-artifact@v3
+        with:
+          name: init.gradle.kts
+
       - name: Run publish task
         run: >-
-          ./gradlew publishAllPublicationsToMavenProjectRepo -Pnative.deploy=true --init-script .github/init.gradle.kts
+          ./gradlew publishAllPublicationsToMavenProjectRepo -Pnative.deploy=true --init-script init.gradle.kts
         env:
           LOCAL_PROJECT_PUBLISH_DIR: "${{ runner.temp }}/m2"
 
