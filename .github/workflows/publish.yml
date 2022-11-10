@@ -18,6 +18,6 @@ jobs:
           - ubuntu-latest
           - macos-11
           - windows-latest
-    uses: .github/workflows/publish-task.yml
+    uses: ./.github/workflows/publish_task.yml
     with:
       runs-on: ${{ matrix.os }}
