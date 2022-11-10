@@ -15,8 +15,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: wget init.gradle.kts
-        run: >-
+        run: |
+          echo "::group::wget init.gradle.kts"
           wget https://raw.githubusercontent.com/aSemy/kotlinx.serialization/master/.github/init.gradle.kts
+          echo "::endgroup::"
+          
+          echo "::group::cat init.gradle.kts"
+          cat init.gradle.kts
+          echo "::endgroup::"
 
       - name: upload init.gradle.kts
         uses: actions/upload-artifact@v3

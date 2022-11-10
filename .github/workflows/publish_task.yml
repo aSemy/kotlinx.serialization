@@ -65,7 +65,7 @@ jobs:
 
       - name: Run publish task
         run: >-
-          ./gradlew publishAllPublicationsToMavenProjectRepo --init-script init.gradle.kts --stacktrace
+          ./gradlew publishAllPublicationsToMavenProjectRepo --init-script init.gradle.kts --stacktrace --info
         env:
           LOCAL_PROJECT_PUBLISH_DIR: "${{ runner.temp }}/m2"
 
