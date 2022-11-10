@@ -1,0 +1,15 @@
+
+on:
+  workflow_dispatch:
+    inputs:
+      runs-on:
+        description: "OSes to run the task on"
+        required: true
+        type: string
+
+  workflow_call:
+    inputs:
+      runs-on:
+        description: "OSes to run the task on"
+        required: true
+        type: string
