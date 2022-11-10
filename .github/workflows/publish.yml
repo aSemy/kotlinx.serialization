@@ -11,7 +11,21 @@ concurrency:
 
 jobs:
 
+  prep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: wget init.gradle.kts
+        run: >-
+          wget https://raw.githubusercontent.com/aSemy/kotlinx.serialization/master/.github/init.gradle.kts
+
+      - name: upload init.gradle.kts
+        uses: actions/upload-artifact@v3
+        with:
+          name: init.gradle.kts
+          path: init.gradle.kts
+
   publish:
+    needs: prep
     strategy:
       fail-fast: false
       matrix:
