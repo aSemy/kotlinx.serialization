@@ -1,0 +1,191 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kotlinx-serialization-protobuf/1.5.0-SNAPSHOT/kotlinx-serialization-protobuf-1.5.0-SNAPSHOT.module",
+    "group": "org.jetbrains.kotlinx",
+    "module": "kotlinx-serialization-protobuf",
+    "version": "1.5.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsLegacyApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-protobuf-jslegacy-1.5.0-SNAPSHOT.jar",
+          "url": "kotlinx-serialization-protobuf-js-1.5.0-SNAPSHOT.jar",
+          "size": 126793,
+          "sha512": "32334ba997cbba84125a3310c5823cd7e3b5c5ac6b2c08dda8e8cdefeb8ad9b5321d4fe36d65856c36dcca3929db6b69465ff8e6d01e2be725dc1dd4729dfa00",
+          "sha256": "1e18b993c48768e1546c1c3f19be4a513a6a03f963d6193bffb3bf7948d36565",
+          "sha1": "62a6ef891b6b59730c67faa46f323ef731ee7837",
+          "md5": "32bc505d1d4de55dc70622f09de992da"
+        }
+      ]
+    },
+    {
+      "name": "jsLegacyRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-protobuf-jslegacy-1.5.0-SNAPSHOT.jar",
+          "url": "kotlinx-serialization-protobuf-js-1.5.0-SNAPSHOT.jar",
+          "size": 126793,
+          "sha512": "32334ba997cbba84125a3310c5823cd7e3b5c5ac6b2c08dda8e8cdefeb8ad9b5321d4fe36d65856c36dcca3929db6b69465ff8e6d01e2be725dc1dd4729dfa00",
+          "sha256": "1e18b993c48768e1546c1c3f19be4a513a6a03f963d6193bffb3bf7948d36565",
+          "sha1": "62a6ef891b6b59730c67faa46f323ef731ee7837",
+          "md5": "32bc505d1d4de55dc70622f09de992da"
+        }
+      ]
+    },
+    {
+      "name": "jsIrApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-protobuf-jsir-1.5.0-SNAPSHOT.klib",
+          "url": "kotlinx-serialization-protobuf-js-1.5.0-SNAPSHOT.klib",
+          "size": 122172,
+          "sha512": "204bcd8b93e31c3aa4da59d33cb2af94c790053f5905fd79f67dc2e47772513fb954ac3e47017fe5b05907e9c0aa8b4f45700d75dfd730c3538d5e0c90306874",
+          "sha256": "d0165ad1fed203b118307f42df2122234b26f285cd07eedcfa0723f178ea5694",
+          "sha1": "3ab144cabe8e3a751cf8a769437aab620b3c3b1e",
+          "md5": "e8fdf60b16e54faae28494ba828d1185"
+        }
+      ]
+    },
+    {
+      "name": "jsIrRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-protobuf-jsir-1.5.0-SNAPSHOT.klib",
+          "url": "kotlinx-serialization-protobuf-js-1.5.0-SNAPSHOT.klib",
+          "size": 122172,
+          "sha512": "204bcd8b93e31c3aa4da59d33cb2af94c790053f5905fd79f67dc2e47772513fb954ac3e47017fe5b05907e9c0aa8b4f45700d75dfd730c3538d5e0c90306874",
+          "sha256": "d0165ad1fed203b118307f42df2122234b26f285cd07eedcfa0723f178ea5694",
+          "sha1": "3ab144cabe8e3a751cf8a769437aab620b3c3b1e",
+          "md5": "e8fdf60b16e54faae28494ba828d1185"
+        }
+      ]
+    }
+  ]
+}
