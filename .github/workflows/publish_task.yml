@@ -32,7 +32,7 @@ jobs:
     environment:
       name: artifacts
       url: ${{ steps.deployment.outputs.page_url }}
-    name: "./gradlew ${{ inputs.gradle-task}} @ ${{ inputs.runs-on }}"
+    name: "publish @ ${{ inputs.runs-on }}"
     timeout-minutes: 60
 
     steps:
