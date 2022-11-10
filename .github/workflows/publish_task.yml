@@ -93,8 +93,8 @@ jobs:
     environment:
       name: artifacts
     env:
-      CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
-      CI_COMMIT_AUTHOR: Continuous Integration
+      CI_COMMIT_MESSAGE: ${{ inputs.runs-on }} artifacts
+      CI_COMMIT_AUTHOR: ${{ github.workflow }}
     steps:
       - name: Checkout artifacts branch
         uses: actions/checkout@v3
