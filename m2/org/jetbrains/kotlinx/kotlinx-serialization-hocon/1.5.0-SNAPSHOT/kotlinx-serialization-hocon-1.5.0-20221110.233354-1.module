@@ -1,0 +1,124 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.jetbrains.kotlinx",
+    "module": "kotlinx-serialization-hocon",
+    "version": "1.5.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "com.typesafe",
+          "module": "config",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-hocon-1.5.0-SNAPSHOT.jar",
+          "url": "kotlinx-serialization-hocon-1.5.0-SNAPSHOT.jar",
+          "size": 53105,
+          "sha512": "b7bc9b1ea61c020d5a78f7f6f09c9efcfa8cc97c28d2152245a5ca781c83d7e3079b85d26c2587603be12ad8f090da34d73ed952f272cfe5ed1cb4c919d76c7f",
+          "sha256": "ece1958f9c1ece76a7ad1dc315eee09a445bd5335538edefe9b1b16a08fe4196",
+          "sha1": "32bcf5be2f3aa8d32258b2a92239606d89a83be3",
+          "md5": "014f7bc6391705750cbf5dc9a6e89500"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "com.typesafe",
+          "module": "config",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-hocon-1.5.0-SNAPSHOT.jar",
+          "url": "kotlinx-serialization-hocon-1.5.0-SNAPSHOT.jar",
+          "size": 53105,
+          "sha512": "b7bc9b1ea61c020d5a78f7f6f09c9efcfa8cc97c28d2152245a5ca781c83d7e3079b85d26c2587603be12ad8f090da34d73ed952f272cfe5ed1cb4c919d76c7f",
+          "sha256": "ece1958f9c1ece76a7ad1dc315eee09a445bd5335538edefe9b1b16a08fe4196",
+          "sha1": "32bcf5be2f3aa8d32258b2a92239606d89a83be3",
+          "md5": "014f7bc6391705750cbf5dc9a6e89500"
+        }
+      ]
+    }
+  ]
+}
