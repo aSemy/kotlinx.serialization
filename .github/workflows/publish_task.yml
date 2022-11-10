@@ -92,6 +92,7 @@ jobs:
     needs: local-project-publish
     environment:
       name: artifacts
+      url: https://github.com/aSemy/kotlinx.serialization/tree/artifacts/m2
     env:
       CI_COMMIT_MESSAGE: ${{ inputs.runs-on }} artifacts
       CI_COMMIT_AUTHOR: ${{ github.workflow }}
