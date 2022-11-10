@@ -81,7 +81,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: local-project-publish-${{ inputs.runs-on }}
-          path: ${{ env.MAVEN_PROJECT_REPO_DIR }}
+          path: ${{ env.LOCAL_PROJECT_PUBLISH_DIR }}
         env:
           LOCAL_PROJECT_PUBLISH_DIR: "${{ runner.temp }}/m2"
 
