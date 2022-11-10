@@ -1,0 +1,56 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kotlinx-serialization-protobuf/1.5.0-SNAPSHOT/kotlinx-serialization-protobuf-1.5.0-SNAPSHOT.module",
+    "group": "org.jetbrains.kotlinx",
+    "module": "kotlinx-serialization-protobuf",
+    "version": "1.5.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "nativeApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-protobuf.klib",
+          "url": "kotlinx-serialization-protobuf-native-1.5.0-SNAPSHOT.klib",
+          "size": 120797,
+          "sha512": "507c537e64dbe6eaccbd0011762d3ff0a8357e0ceaf276a44d8534f9dd7e7ee10d508f18543e691430859a3f0392acf679875e000ddc349d1762ad8fc8b4f491",
+          "sha256": "25c4c09cddaf27dddee8f0574566364ba97a7ccf137cc889c6d94b4de83d4045",
+          "sha1": "64d41d8012e3e7cb23ebd26477d5efa3b0a51869",
+          "md5": "b6ad324884b0fa948227d2ababb65c10"
+        }
+      ]
+    }
+  ]
+}
