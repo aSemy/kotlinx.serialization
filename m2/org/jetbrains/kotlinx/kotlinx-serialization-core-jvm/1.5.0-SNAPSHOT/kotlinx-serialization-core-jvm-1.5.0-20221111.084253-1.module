@@ -1,0 +1,105 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kotlinx-serialization-core/1.5.0-SNAPSHOT/kotlinx-serialization-core-1.5.0-SNAPSHOT.module",
+    "group": "org.jetbrains.kotlinx",
+    "module": "kotlinx-serialization-core",
+    "version": "1.5.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-core-jvm-1.5.0-SNAPSHOT.jar",
+          "url": "kotlinx-serialization-core-jvm-1.5.0-SNAPSHOT.jar",
+          "size": 395497,
+          "sha512": "0fa89560f9edacd3b1a7356546142600908d56ac771b3d73c0ec93f934089302bd57cb41ffce218b1eb95920c3e6179836daf7a0fb545c55df01c19eb2715aa8",
+          "sha256": "1b21e69ac2f8017326aa30c505ccca1776fdd9f3750f410752278913c5c048a6",
+          "sha1": "3b6748d56e8e8e9670c479d8947917ec5a44f96b",
+          "md5": "20acb14c955604e3e7006ef1512a0f10"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-core-jvm-1.5.0-SNAPSHOT.jar",
+          "url": "kotlinx-serialization-core-jvm-1.5.0-SNAPSHOT.jar",
+          "size": 395497,
+          "sha512": "0fa89560f9edacd3b1a7356546142600908d56ac771b3d73c0ec93f934089302bd57cb41ffce218b1eb95920c3e6179836daf7a0fb545c55df01c19eb2715aa8",
+          "sha256": "1b21e69ac2f8017326aa30c505ccca1776fdd9f3750f410752278913c5c048a6",
+          "sha1": "3b6748d56e8e8e9670c479d8947917ec5a44f96b",
+          "md5": "20acb14c955604e3e7006ef1512a0f10"
+        }
+      ]
+    }
+  ]
+}
