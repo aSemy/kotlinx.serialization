@@ -6,7 +6,7 @@ on:
 
 concurrency:
   group: "${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 
 jobs:
@@ -34,6 +34,7 @@ jobs:
     needs: prep
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
         os:
           - ubuntu-latest
