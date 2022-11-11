@@ -1,0 +1,56 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kotlinx-serialization-properties/1.5.0-SNAPSHOT/kotlinx-serialization-properties-1.5.0-SNAPSHOT.module",
+    "group": "org.jetbrains.kotlinx",
+    "module": "kotlinx-serialization-properties",
+    "version": "1.5.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "nativeApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-properties.klib",
+          "url": "kotlinx-serialization-properties-native-1.5.0-SNAPSHOT.klib",
+          "size": 20677,
+          "sha512": "f0cfe02a6cc5a871e7ee871142e4d30610fb2feba569e616c6416495f9d04790e939457881dd14b1cd20f94a4fc80c278ed297ef51a0ad0dd428aec5ba0b7deb",
+          "sha256": "69f5b49591a184fcacebcf18a62f8f959fdde691406573b1b10ce4e47a3a24ef",
+          "sha1": "ccddb8d2b12c3d86cf293d26a3560486ce327fc4",
+          "md5": "3049677c5b03af83ad0ce201782e68a3"
+        }
+      ]
+    }
+  ]
+}
