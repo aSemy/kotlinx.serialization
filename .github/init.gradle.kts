@@ -22,7 +22,7 @@ class LocalProjectPublishPlugin : Plugin<Gradle> {
             tasks.configureEach {
                 doFirst { println("::group::${path}") }
 
-                doLast { println("::endgroup::") }
+                // doLast { println("::endgroup::") }
             }
         }
     }
