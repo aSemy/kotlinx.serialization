@@ -1,0 +1,194 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.jetbrains.kotlinx",
+    "module": "kotlinx-serialization-cbor",
+    "version": "1.5.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-cbor-metadata-1.5.0-SNAPSHOT-all.jar",
+          "url": "kotlinx-serialization-cbor-1.5.0-SNAPSHOT-all.jar",
+          "size": 8120,
+          "sha512": "a517c83c87ed311b1a540920cb19e2ca5ee704cde8084497c8509d4a2b36cb7e9b411b5f0305f4f5b187c8b96d4141f67a4d8d92a32ea50e8830d87e793e372c",
+          "sha256": "a21613f9fa18835fc874e9f21c2ffd165b9cf79396ec05208f4e35a212c5e386",
+          "sha1": "09d4976dba86cccf3e139dca62ec4ec7922dd861",
+          "md5": "e1d74750f12ac95402006dabcb30d30d"
+        }
+      ]
+    },
+    {
+      "name": "commonMainMetadataElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.5.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-serialization-cbor-1.5.0-SNAPSHOT.jar",
+          "url": "kotlinx-serialization-cbor-1.5.0-SNAPSHOT.jar",
+          "size": 11137,
+          "sha512": "2ce2958b4c51c80ba76b72ce6a47fd8f470748470bd066c6f1f65b63803b112bd0061ba401c44dfd748f6e68b52ab405f7e53fa8863433a8150c1dcdd9284bad",
+          "sha256": "79c4766bdc11ecad40b8a69341d369a7f5918c5d01360bc08daf7b344fe05ef6",
+          "sha1": "f122bb43fdfb362099cf76aa856b086690d1cef0",
+          "md5": "f77b32d12aa3d1814f10676764823111"
+        }
+      ]
+    },
+    {
+      "name": "jsLegacyApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kotlinx-serialization-cbor-js/1.5.0-SNAPSHOT/kotlinx-serialization-cbor-js-1.5.0-SNAPSHOT.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-serialization-cbor-js",
+        "version": "1.5.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsLegacyRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kotlinx-serialization-cbor-js/1.5.0-SNAPSHOT/kotlinx-serialization-cbor-js-1.5.0-SNAPSHOT.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-serialization-cbor-js",
+        "version": "1.5.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsIrApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kotlinx-serialization-cbor-js/1.5.0-SNAPSHOT/kotlinx-serialization-cbor-js-1.5.0-SNAPSHOT.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-serialization-cbor-js",
+        "version": "1.5.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsIrRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kotlinx-serialization-cbor-js/1.5.0-SNAPSHOT/kotlinx-serialization-cbor-js-1.5.0-SNAPSHOT.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-serialization-cbor-js",
+        "version": "1.5.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kotlinx-serialization-cbor-jvm/1.5.0-SNAPSHOT/kotlinx-serialization-cbor-jvm-1.5.0-SNAPSHOT.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-serialization-cbor-jvm",
+        "version": "1.5.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kotlinx-serialization-cbor-jvm/1.5.0-SNAPSHOT/kotlinx-serialization-cbor-jvm-1.5.0-SNAPSHOT.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-serialization-cbor-jvm",
+        "version": "1.5.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "nativeApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kotlinx-serialization-cbor-native/1.5.0-SNAPSHOT/kotlinx-serialization-cbor-native-1.5.0-SNAPSHOT.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-serialization-cbor-native",
+        "version": "1.5.0-SNAPSHOT"
+      }
+    }
+  ]
+}
