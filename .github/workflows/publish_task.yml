@@ -20,9 +20,8 @@ on:
 
 
 concurrency:
-  # note: the Workflow inputs are also included in the concurrency group
-  group: "${{ github.workflow }} ${{ join(inputs.*) }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}"
-  cancel-in-progress: true
+  group: "${{ github.workflow }}"
+  cancel-in-progress: false
 
 
 jobs:
